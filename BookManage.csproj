@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F008106E-D6BC-494C-99C0-79504C3807A2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BookManage</RootNamespace>
+    <AssemblyName>BookManage</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ext\Ext.cs" />
+    <Compile Include="FormBack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBack.Designer.cs">
+      <DependentUpon>FormBack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChangePwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChangePwd.Designer.cs">
+      <DependentUpon>FormChangePwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDelay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDelay.Designer.cs">
+      <DependentUpon>FormDelay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBorrow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBorrow.Designer.cs">
+      <DependentUpon>FormBorrow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBookTypeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBookTypeAdd.Designer.cs">
+      <DependentUpon>FormBookTypeAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBookType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBookType.Designer.cs">
+      <DependentUpon>FormBookType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReaderMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReaderMain.Designer.cs">
+      <DependentUpon>FormReaderMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBook.Designer.cs">
+      <DependentUpon>FormBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBorrowAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBorrowAdd.Designer.cs">
+      <DependentUpon>FormBorrowAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBill.Designer.cs">
+      <DependentUpon>FormBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReader.Designer.cs">
+      <DependentUpon>FormReader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBookAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBookAdd.Designer.cs">
+      <DependentUpon>FormBookAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReaderAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReaderAdd.Designer.cs">
+      <DependentUpon>FormReaderAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalVal.cs" />
+    <Compile Include="Models\baseEntity.cs" />
+    <Compile Include="Models\书籍类别.cs" />
+    <Compile Include="Models\借阅信息.cs" />
+    <Compile Include="Models\图书.cs" />
+    <Compile Include="Models\图书管理员.cs" />
+    <Compile Include="Models\罚单.cs" />
+    <Compile Include="Models\读者.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\IgnoreAttribute.cs" />
+    <Compile Include="Utils\KeyAttribute.cs" />
+    <Compile Include="Utils\OleDbUtil.cs" />
+    <Compile Include="Utils\SqlFactoryUtil.cs" />
+    <Compile Include="Utils\StringLengthAttribute.cs" />
+    <Compile Include="Utils\TableNameAttribute.cs" />
+    <EmbeddedResource Include="FormBack.resx">
+      <DependentUpon>FormBack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChangePwd.resx">
+      <DependentUpon>FormChangePwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDelay.resx">
+      <DependentUpon>FormDelay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBorrow.resx">
+      <DependentUpon>FormBorrow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBookTypeAdd.resx">
+      <DependentUpon>FormBookTypeAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBookType.resx">
+      <DependentUpon>FormBookType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReaderMain.resx">
+      <DependentUpon>FormReaderMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBook.resx">
+      <DependentUpon>FormBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBorrowAdd.resx">
+      <DependentUpon>FormBorrowAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBill.resx">
+      <DependentUpon>FormBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReader.resx">
+      <DependentUpon>FormReader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBookAdd.resx">
+      <DependentUpon>FormBookAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReaderAdd.resx">
+      <DependentUpon>FormReaderAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
